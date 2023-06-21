@@ -25,7 +25,7 @@ float cost(float w, float b)
 		float x = train[i][0];
 		float y = (x * w) + b;
 		float d = y - train[i][1];
-		mse = d * d;
+		mse += d * d;
 	}
 
 	mse /= TRAIN_COUNT;
